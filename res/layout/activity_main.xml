@@ -1,0 +1,39 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MapShowFragment" >
+    
+    <LinearLayout 
+        android:id="@+id/layout_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        >
+     	<Button 
+     	    android:id="@+id/btn_list"
+     	    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:padding="10dp"
+        	android:text="列表"/>
+     	<Button 
+     	    android:id="@+id/btn_map"
+     	    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginLeft="-8dp"
+        	android:padding="10dp"
+        	android:text="地图"/>
+    </LinearLayout>
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+   
+    
+    
+    <ImageView 
+        android:id="@+id/iv_marker"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:visibility="invisible"
+    	android:layout_marginLeft="3dp"
+    	android:src="@drawable/map_marker"/>
+    <ImageView 
+        android:id="@+id/iv_point"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:src="@drawable/point2"
+    	android:layout_below="@id/iv_marker"/>
+    <View 
+        android:id="@+id/view_line"
+        android:layout_width="50dp"
+    	android:layout_height="3dp"
+    	android:padding="15dp"
+    	android:background="#0000FF" 
+    	android:layout_marginTop="30dp"
+    	android:layout_marginLeft="-6dp"
+    	android:layout_toRightOf="@id/iv_point"
+    	/>
+	<TextView
+	    android:id="@+id/tv_station_no"
+	    android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="1"
+    	android:layout_below="@id/iv_point"
+    	android:layout_marginLeft="7dp"
+    	/>
+	<TextView
+	    android:id="@+id/tv_station_name"
+	    android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="中北大学"
+    	android:layout_below="@id/tv_station_no"
+    	android:layout_marginLeft="5dp"
+    	android:ems="1"
+    	/>
+</RelativeLayout>
